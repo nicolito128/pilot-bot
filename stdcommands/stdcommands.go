@@ -2,6 +2,7 @@ package stdcommands
 
 import (
 	"github.com/nicolito128/pilot-bot/pkg/commands"
+	"github.com/nicolito128/pilot-bot/stdcommands/calculator"
 	"github.com/nicolito128/pilot-bot/stdcommands/info"
 	"github.com/nicolito128/pilot-bot/stdcommands/ping"
 )
@@ -13,6 +14,8 @@ var CommandList = []commands.PilotCommand{
 	info.GithubCommand,
 	info.PilotCommand,
 	info.InviteCommand,
+
+	calculator.Command,
 }
 
 var HandlerList = map[string]commands.CommandHandler{
@@ -22,4 +25,6 @@ var HandlerList = map[string]commands.CommandHandler{
 	info.GithubCommand.ID:    info.GithubCommand.Handler,
 	info.PilotCommand.ID:     info.PilotCommand.Handler,
 	info.InviteCommand.ID:    info.InviteCommand.Handler,
+
+	calculator.Command.ID: calculator.Command.Handler,
 }

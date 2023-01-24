@@ -2,7 +2,10 @@ module github.com/nicolito128/pilot-bot
 
 go 1.19
 
-require github.com/bwmarrin/discordgo v0.27.0
+require (
+	github.com/bwmarrin/discordgo v0.27.0
+	github.com/nicolito128/go-calculator v1.1.0
+)
 
 require (
 	github.com/gorilla/websocket v1.4.2 // indirect
